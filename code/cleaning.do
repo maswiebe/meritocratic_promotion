@@ -129,6 +129,10 @@ egen everarrested_outofoffice = max(arrested_dummy), by(idpref)
 *---------------------------------------------------------------------------------
 *** promotion definitions
 
+* `promoted` is `promoCode` in city_full_v14.xlsx
+* see data/raw_data/readme.docx for the value labels
+  * eg. 500 = promotion to prefecture secretary
+
 gen promotion1 = (inrange(promoted,500,500) & _end==1) if missing(promoted)==0
 gen promotion2 = (inrange(promoted,500,504) & _end==1) if missing(promoted)==0
 * exclude LPC/CPPCC positions

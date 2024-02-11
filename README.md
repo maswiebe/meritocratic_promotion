@@ -11,6 +11,9 @@ List of data files:
 - promotion_national.dta is the main dataset on prefecture mayors
 - prefecture.dta is prefecture characteristics for 1991-2019
 
+The raw data is included in 'data/raw_data/'.
+The data dictionary for the promotion data (city_full_v14.xlsx) is data/raw_data/dictionary.docx.
+
 I include data on prefecture secretaries from other papers:
 - prefecture_panel.dta is from Chen and Kung (2019)
 - prefecture_leaders.dta is from James Kung
